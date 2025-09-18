@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav id="Navbar">
+            <div>
+                <div class="navbar bg-base-100 shadow-sm">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                                <li><a>Item 1</a></li>
+                                <li>
+                                    <a>Parent</a>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>Item 3</a></li>
+                            </ul>
+                        </div>
+                        <a class="btn btn-ghost text-xl">SHOP</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a>Item 1</a></li>
+                            <li>
+                                <details>
+                                    <summary>Parent</summary>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end">
+                        <a class="btn">Button</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="flex items-center flex-col justify-center bg-gray-200 p-2">
+            <span>Save Up To 40%</span>
+            <span>Shop All Our New Featured</span>
+        </div>
+        <div>
+            <div class="flex justify-center md:mx-20">
+                <img src="./img/div.png" alt="habit" class="w-full  md:h-170">
+            </div>
+            <div class="text-center my-8 gap-4 flex flex-col">
+                <span>
+                    The best way to beat the heat is to buy new clothes, but if you're not sure where to start, we've got you
+                    covered. <br>
+                    Here are some of our favorite products that will make you look amazing in the summer:
+                </span>
+                <div>
+                    <button class="bg-blue-500 text-white rounded-xl p-2 cursor-pointer">
+                        summer shop
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class=" my-20 md:mx-20 ">
+            <h1 class="text-xl font-normal">Featured</h1>
+            <div class="grid grid-cols-12 gap-4 ">
+                <div class="col-span-6 nike relative h-80 md:h-190">
+                     <img src="./img/div (3).png" alt="" class=" absolute w-full  h-full">
+                     <div class="absolute bottom-0  left-6 right-0 flex flex-col">
+                        <span>
+                            Exclusive Nike Shoes : Your early access to the season’s <br>
+                             latest collection is here.
+                        </span>
+                        <div class=" my-6">
+                            <button class="bg-black text-white rounded-xl px-5 py-1 cursor-pointer">Visit Nearest Nike Shop</button>
+                        </div>
+                     </div>
+                </div>
+                <div class="col-span-6 nike relative h-80 md:h-190">
+                     <img src="./img/nike-just-do-it.png.png" alt="" class=" absolute w-full  h-full">
+                     <div class="absolute bottom-0  left-6 right-0 flex flex-col">
+                        <span>
+                            Best of Hats
+                        </span>
+                        <div class=" my-6">
+                            <button class="bg-black text-white rounded-xl px-5 py-1 cursor-pointer">Shop</button>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class=" my-20 flex flex-col md:mx-20 gap-4 ">
+            <h1>Don’t Miss Exclusive sales</h1>
+            <div class="flex justify-center relative h-90 md:h-190">
+                <img src="./img/nike-just-do-it.jpg.png" alt="" class=" w-full h-full  absolute " >
+                <div class="absolute bottom-0">
+                    <span class="text-xl md:text-9xl text-white font-semibold">SUMMER POSSIBILITIES</span>
+                </div>
+                
+            </div>
+            <div class="flex flex-col text-center">
+                 <span>We've got you covered this summer when it comes to shopping for gifts!</span> 
+                 <span> Whether you're looking for something for yourself or a friend, we've got everything from the best cookbooks to the hottest tech gadgets. Our gift guide is designed to help you find exactly what you're looking for—and if it's not on our list, we're totally willing to help you find it!</span>  
+            </div>
+            <div class="text-center">
+                <button class="bg-black text-white rounded-xl p-2 cursor-pointer">
+                        Explore Gifts
+                </button>
+            </div>
+        </div>
+        <div class="my-20 md:mx-20">
+            <h1>Work-Out Outfits</h1>
+            <div class="grid  grid-cols-12 gap-2 flex items-center">
+                <div class="col-span-6 md:col-span-4 relative h-80 md:h-225">
+                    <img src="./img/nike-just-do-it.png (1).png" alt="" class="absolute w-full  h-full">
+                    <div class="absolute bottom-5 left-5">
+                        <div>
+                            <button class="bg-black text-white rounded-xl p-2 cursor-pointer">
+                                <a href="">Shop Men's</a>
+                            </button>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 md:col-span-4 relative h-80 md:h-225">
+                    <img src="./img/nike-just-do-it.png (2).png" alt="" class="absolute w-full  h-full">
+                    <div class="absolute bottom-5 left-5">
+                        <div>
+                            <button class="bg-black text-white rounded-xl p-2 cursor-pointer">
+                                <a href="">Shop Men's</a>
+                            </button>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 md:col-span-4 relative h-80 md:h-225">
+                    <img src="./img/nike-just-do-it.png (4).png" alt="" class="absolute w-full  h-full">
+                    <div class="absolute bottom-5 left-5">
+                        <div>
+                            <button class="bg-black text-white rounded-xl p-2 cursor-pointer">
+                                <a href="">Shop Men's</a>
+                            </button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="my-20 md:mx-20">
+            <h1>More from Design Studio of Eureka</h1>
+            <div class="grid  grid-cols-12 gap-2 flex items-center">
+                <div class="col-span-6 md:col-span-4 relative h-80 md:h-150">
+                    <img src="./img/nike-just-do-it.png (5).png" alt="" class="absolute w-full  h-full">
+                    <div class="absolute bottom-5 left-5">
+                        <div>
+                            <button class="bg-white text-black rounded-xl p-2 cursor-pointer">
+                                <a href="">Men's</a>
+                            </button>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 md:col-span-4 relative h-80 md:h-150">
+                    <img src="./img/nike-just-do-it.png (6).png" alt="" class="absolute w-full  h-full">
+                    <div class="absolute bottom-5 left-5">
+                        <div>
+                            <button class="bg-white text-black rounded-xl p-2 cursor-pointer">
+                                <a href="">Woman's</a>
+                            </button>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 md:col-span-4 relative h-80 md:h-150">
+                    <img src="./img/nike-just-do-it.png (7).png" alt="" class="absolute w-full  h-full">
+                    <div class="absolute bottom-5 left-5">
+                        <div>
+                            <button class="bg-white text-black rounded-xl p-2 cursor-pointer">
+                                <a href="">Kids'</a>
+                            </button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
