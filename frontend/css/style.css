@@ -1,6 +1,6 @@
 .images-background{
     
-    background-image: url("./frontend/img/nike-just-do-it.png4.png");
+    background-image: url("/frontend/img/nike-just-do-it.png4.png");
     background-size:cover ;
     background-repeat: no-repeat;
     background-position: center;
