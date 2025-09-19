@@ -10,6 +10,7 @@
     <title>Document</title>
 </head>
 <body class="images-background ">
+    <nav id="Navbar"></nav>
     <main class=" h-full min-h-screen flex justify-center  sm:pt-[20%] md:pt-[30%] lg:py-[8%] md:px-[9%] md:pb-[9%]">
         <div class="grid grid-cols-1 md:grid-cols-2   w-300 ">
             
@@ -20,17 +21,19 @@
                         <label for="email" class="text-xl font-bold">Email Address</label>
                         <div class="flex  items-center bg-base-100 border-1 p-2 rounded-3xl">
                             <i class="fa-solid fa-envelope"></i>
-                            <input type="text" id="email" name="email" placeholder="Entrez Votre Email" class="w-full border-0 focus:outline-none ">
+                            <input required type="email" id="email" name="email" placeholder="Entrez Votre Email" class="w-full border-0 focus:outline-none ">
                         </div>
                     </div>
                     <div class="flex-col flex ">
-                        <label for="email" class="text-xl font-bold">Passwords</label>
+                        <label for="password" class="text-xl font-bold">Passwords</label>
                         <div class="flex  border-1 p-2 bg-base-100 rounded-3xl" >
                             <i class="fa-solid fa-key"></i>
-                            <input type="text" id="email" name="email" placeholder="Entrez Votre Email" class="w-full border-0 focus:outline-none">
+                            <input required type="password" id="password" name="password" placeholder="Entrez Votre Email" class="w-full border-0 focus:outline-none">
                         </div>
                     </div>
-                    <div class="text-center bg-black py-3 text-white rounded-3xl mx-10 ">  <button type="button" class="cursor-pointer">Login</button>
+                    <div id="message" class="text-center"></div>
+                    <div class="text-center "> 
+                         <button class="bg-black px-7 py-2 text-white rounded-3xl cursor-pointer " type="submit" >Sigin Up</button>
                     </div>
                 </form>
                 <div>
