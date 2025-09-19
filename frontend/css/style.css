@@ -1,10 +1,6 @@
-#carousel{
-background: #000;
-}
-
-.a{
-    background: #000;
-    background-image: url("./frontend/img/nike-just-do-it.png\ \(4\).png");
+.images-background{
+    
+    background-image: url("./frontend/img/nike-just-do-it.png4.png");
     background-size:cover ;
     background-repeat: no-repeat;
     background-position: center;
