@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
-<body class="a ">
-    <main class=" h-full min-h-screen flex justify-center  sm:pt-[20%] md:pt-[30%] lg:py-[8%] md:px-[9%] md:pb-[9%]">
-        <div class="grid grid-cols-1 md:grid-cols-2   w-300 ">
-            
-            <div class="items-center justify-center bg-gradient-to-t from-[rgb(243,244,246)]   flex flex-col px-[10%] ">
-                <h1 class="text-2xl font-bold">Log into THis Web</h1>
-                <form id="FormLogin" class="flex  flex-col gap-5  w-full  ">
+<body class="a">
+    <main class=" flex justify-center items-center ">
+        <div class="flex justify-center items-center w-full h-full min-h-screen md:h-200  ">
+          
+            <div class="  items-center justify-center gap-8  bg-gradient-to-t from-[rgb(243,244,246)]  rounded-3xl  flex flex-col w-100 p-10 ">
+                <h1 class="text-2xl font-bold">Sigin  This Web</h1>
+                <form id="FormSiginup" class="flex  flex-col gap-5  w-full  ">
                     <div class="flex-col flex">
                         <label for="email" class="text-xl font-bold">Email Address</label>
                         <div class="flex  items-center bg-base-100 border-1 p-2 rounded-3xl">
@@ -30,14 +30,19 @@
                             <input type="text" id="email" name="email" placeholder="Entrez Votre Email" class="w-full border-0 focus:outline-none">
                         </div>
                     </div>
-                    <div class="text-center bg-black py-3 text-white rounded-3xl mx-10 ">  <button type="button" class="cursor-pointer">Login</button>
+                    <div class="flex-col flex ">
+                        <label for="email" class="text-xl font-bold">Passwords Confrim</label>
+                        <div class="flex  border-1 p-2 bg-base-100 rounded-3xl" >
+                            <i class="fa-solid fa-key"></i>
+                            <input type="text" id="email" name="email" placeholder="Entrez Votre Email" class="w-full border-0 focus:outline-none">
+                        </div>
+                    </div>
+                    <div class="text-center bg-black py-3 text-white rounded-3xl mx-10 ">  <button type="button" class="cursor-pointer">Sigin Up</button>
                     </div>
                 </form>
                 <div>
-                    <span>Don't have an account? <a href="./sigin.html" class="text-gray-500 underline font-bold">Sign up here.</a></span>
+                    <span>Your have an account? <a href="./login.html" class="text-gray-500 underline">Login here.</a></span>
                 </div>
-            </div><div class=" hidden md:block">
-                <img src="./img/wmremove-transformed (2).jpeg" alt="" class="  h-50 md:h-full rounded-r-[200px] w-full">
             </div>
         </div>
     </main>
