@@ -13,11 +13,12 @@ export const SignUp = () => {
       const passwordConfirm = document.getElementById("passwordConfirm").value
       
       //verifie si les deux mots de passe sont egaux
-      if(passwords !== passwordConfirm) return ErrorMessage("Les deux mots de passe doivent être identiques")
+      if(password !== passwordConfirm) return ErrorMessage("Les deux mots de passe doivent être identiques")
 
       const req = await axios.post("http://localhost:3001/users", { email, nameUser, password })
       ErrorMessage("Bienvenue")
-      
+      time
+      location.href="login.html"
     } catch (error) {
       console.log(error)
     }

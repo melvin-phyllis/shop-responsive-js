@@ -6,253 +6,232 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./frontend/css/style.css">
-    
     <title>Document</title>
 </head>
-<body>
+<body class="bg-white">
     <header>
         <nav id="Navbar"></nav>
-        <div class="flex items-center flex-col justify-center bg-gray-200 p-2">
-            <span>Save Up To 40%</span>
-            <span>Shop All Our New Featured</span>
+        <div class="flex items-center flex-col justify-center bg-gradient-to-r from-gray-100 to-gray-50 p-3">
+            <span class="text-sm font-semibold text-gray-600">Save Up To 40%</span>
+            <span class="text-lg font-bold text-gray-800">Shop All Our New Featured</span>
         </div>
         <div>
             <div class="flex justify-center md:mx-20">
-                <img src="./frontend/img/div.png" alt="habit" class="w-full  md:h-170">
+                <img src="./frontend/img/div.png" alt="habit" class="w-full md:h-170 object-cover">
             </div>
-            <div class="text-center my-8 gap-4 flex flex-col">
-                <span class="md:text-2xl">
-                    The best way to beat the heat is to buy new clothes, but if you're not sure where to start, we've got you
-                    covered. <br>
+            <div class="text-center my-10 gap-6 flex flex-col px-4">
+                <span class="text-lg md:text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto">
+                    The best way to beat the heat is to buy new clothes, but if you're not sure where to start, we've got you covered. <br>
                     Here are some of our favorite products that will make you look amazing in the summer:
                 </span>
                 <div>
-                    <button class="bg-black text-white rounded-xl p-2 cursor-pointer">
-                        summer shop
+                    <button class="bg-black text-white rounded-full px-8 py-3 hover:bg-gray-800 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl">
+                        Summer Shop
                     </button>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <div class=" my-20 md:mx-20 ">
-            <h1 class="text-3xl font-bold text-center">Featured</h1>
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 ">
-                <div class="col-span-6 nike relative h-80 md:h-190">
-                     <img src="./frontend/img/div (3).png" alt="" class=" absolute w-full  h-full">
-                     <div class="absolute bottom-0  left-6 right-0 flex flex-col">
-                        <span class="md:text-xl">
-                            Exclusive Nike Shoes : Your early access to the season’s <br>
-                             latest collection is here.
+        <div class="my-20 md:mx-20 px-4">
+            <h1 class="text-4xl font-bold text-center mb-10 text-gray-800">Featured</h1>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                <div class="col-span-6 relative h-80 md:h-190 overflow-hidden rounded-lg group">
+                     <img src="./frontend/img/div (3).png" alt="" class="absolute w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                     <div class="absolute bottom-0 left-6 right-6 flex flex-col text-white pb-6">
+                        <span class="text-lg md:text-xl font-semibold mb-4">
+                            Exclusive Nike Shoes : Your early access to the season's <br>
+                            latest collection is here.
                         </span>
-                        <div class=" my-6">
-                            <button class="bg-black text-white rounded-xl px-5 py-1 cursor-pointer">Visit Nearest Nike Shop</button>
+                        <div>
+                            <button class="bg-white text-black rounded-full px-6 py-2 hover:bg-gray-100 transition-colors font-semibold">Visit Nearest Nike Shop</button>
                         </div>
                      </div>
                 </div>
-                <div class="col-span-6 nike relative h-80 md:h-190">
-                     <img src="./frontend/img/nike-just-do-it.png.png" alt="" class=" absolute w-full  h-full">
-                     <div class="absolute bottom-0  left-6 right-0 flex flex-col">
-                        <span class="md:text-xl">
+                <div class="col-span-6 relative h-80 md:h-190 overflow-hidden rounded-lg group">
+                     <img src="./frontend/img/nike-just-do-it.png.png" alt="" class="absolute w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                     <div class="absolute bottom-0 left-6 right-6 flex flex-col text-white pb-6">
+                        <span class="text-lg md:text-xl font-semibold mb-4">
                             Best of Hats
                         </span>
-                        <div class=" my-6">
-                            <button class="bg-black text-white rounded-xl px-5 py-1 cursor-pointer">Shop</button>
+                        <div>
+                            <button class="bg-white text-black rounded-full px-6 py-2 hover:bg-gray-100 transition-colors font-semibold">Shop</button>
                         </div>
                      </div>
                 </div>
             </div>
         </div>
-        <div class=" my-20 flex flex-col md:mx-20 gap-4 ">
-            <h1 class="text-3xl font-bold text-center">Don’t Miss Exclusive sales</h1>
-            <div class="flex justify-center relative h-80 md:h-180">
-                <img src="./frontend/img/nike-just-do-it.jpg.png" alt="" class=" w-full h-full  absolute " >
-                <div class="absolute bottom-30 md:bottom-0">
-                    <span class="text-3xl md:text-9xl text-white font-bold">SUMMER POSSIBILITIES</span>
-                    
+        <div class="my-20 flex flex-col md:mx-20 gap-8 px-4">
+            <h1 class="text-4xl font-bold text-center text-gray-800">Don't Miss Exclusive Sales</h1>
+            <div class="flex justify-center relative h-80 md:h-180 rounded-lg overflow-hidden">
+                <img src="./frontend/img/nike-just-do-it.jpg.png" alt="" class="w-full h-full absolute object-cover">
+                <div class="absolute inset-0 bg-black/40"></div>
+                <div class="absolute bottom-30 md:bottom-0 left-0 right-0 text-center p-6">
+                    <span class="text-3xl md:text-7xl text-white font-bold tracking-tight">SUMMER POSSIBILITIES</span>
                 </div>
-                
             </div>
-            <div class="flex flex-col text-center">
-                 <span class="md:text-2xl">We've got you covered this summer when it comes to shopping for gifts!</span> 
-                 <span class="md:text-2xl"> Whether you're looking for something for yourself or a friend, we've got everything from the best cookbooks to the hottest tech gadgets. Our gift guide is designed to help you find exactly what you're looking for—and if it's not on our list, we're totally willing to help you find it!</span>  
+            <div class="flex flex-col text-center max-w-4xl mx-auto">
+                 <span class="text-lg md:text-xl text-gray-700 leading-relaxed">We've got you covered this summer when it comes to shopping for gifts!</span> 
+                 <span class="text-lg md:text-xl text-gray-700 leading-relaxed mt-2">Whether you're looking for something for yourself or a friend, we've got everything from the best cookbooks to the hottest tech gadgets. Our gift guide is designed to help you find exactly what you're looking for—and if it's not on our list, we're totally willing to help you find it!</span>  
             </div>
             <div class="text-center">
-                <button class="bg-black text-white rounded-xl p-2 cursor-pointer">
-                        Explore Gifts
+                <button class="bg-black text-white rounded-full px-8 py-3 hover:bg-gray-800 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl">
+                    Explore Gifts
                 </button>
             </div>
         </div>
-        <div class="my-20 md:mx-20">
-            <h1 class="text-3xl font-bold text-center">Work-Out Outfits</h1>
-            <div class="grid  grid-cols-1 md:grid-cols-12  flex items-center">
-                <div class="col-span-1 md:col-span-4 relative mx-10 h-90  md:h-225">
-                    <img src="./frontend/img/nike-just-do-it.png (1).png" alt="" class="absolute w-full  h-full">
+        <div class="my-20 md:mx-20 px-4">
+            <h1 class="text-4xl font-bold text-center mb-10 text-gray-800">Work-Out Outfits</h1>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                <div class="col-span-1 md:col-span-4 relative h-90 md:h-225 overflow-hidden rounded-lg group">
+                    <img src="./frontend/img/nike-just-do-it.png (1).png" alt="" class="absolute w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div class="absolute bottom-5 left-5">
-                        <div>
-                            <button class="bg-black text-white rounded-xl p-2 cursor-pointer">
-                                <a href="">Shop Men's</a>
-                            </button>
-                            
-                        </div>
+                        <button class="bg-white text-black rounded-full px-6 py-2 hover:bg-gray-100 transition-colors font-semibold">
+                            <a href="">Shop Men's</a>
+                        </button>
                     </div>
                 </div>
-                <div class="col-span-1  md:col-span-4 relative mx-10 h-90  md:h-225">
-                    <img src="./frontend/img/nike-just-do-it.png (2).png" alt="" class="absolute w-full  h-full">
+                <div class="col-span-1 md:col-span-4 relative h-90 md:h-225 overflow-hidden rounded-lg group">
+                    <img src="./frontend/img/nike-just-do-it.png (2).png" alt="" class="absolute w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div class="absolute bottom-5 left-5">
-                        <div>
-                            <button class="bg-black text-white rounded-xl p-2 cursor-pointer">
-                                <a href="">Shop Men's</a>
-                            </button>
-                            
-                        </div>
+                        <button class="bg-white text-black rounded-full px-6 py-2 hover:bg-gray-100 transition-colors font-semibold">
+                            <a href="">Shop Women's</a>
+                        </button>
                     </div>
                 </div>
-                <div class="col-span-1 md:col-span-4 relative mx-10 h-90 md:h-225">
-                    <img src="./frontend/img/nike-just-do-it.png4.png" alt="" class="absolute w-full  h-full">
+                <div class="col-span-1 md:col-span-4 relative h-90 md:h-225 overflow-hidden rounded-lg group">
+                    <img src="./frontend/img/nike-just-do-it.png4.png" alt="" class="absolute w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div class="absolute bottom-5 left-5">
-                        <div>
-                            <button class="bg-black text-white rounded-xl p-2 cursor-pointer">
-                                <a href="">Shop Men's</a>
-                            </button>
-                            
-                        </div>
+                        <button class="bg-white text-black rounded-full px-6 py-2 hover:bg-gray-100 transition-colors font-semibold">
+                            <a href="">Shop Kids'</a>
+                        </button>
                     </div>
                 </div>
             </div>
-            
         </div>
-        <div class="my-20 md:mx-20">
-            <h1 class="text-3xl font-bold text-center text-center md:text-left">More from Design Studio of Eureka</h1>
-            <div class="grid  grid-cols-12 gap-2 flex items-center">
-                <div class="col-span-6 md:col-span-4 relative  mx-3  h-80 md:h-150">
-                    <img src="./frontend/img/nike-just-do-it.png (5).png" alt="" class="absolute w-full  h-full">
+        <div class="my-20 md:mx-20 px-4">
+            <h1 class="text-4xl font-bold text-center md:text-left mb-10 text-gray-800">More from Design Studio of Eureka</h1>
+            <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-6 md:col-span-4 relative h-80 md:h-150 overflow-hidden rounded-lg group">
+                    <img src="./frontend/img/nike-just-do-it.png (5).png" alt="" class="absolute w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
                     <div class="absolute bottom-5 left-5">
-                        <div>
-                            <button class="bg-white text-black rounded-xl p-2 cursor-pointer">
-                                <a href="">Men's</a>
-                            </button>
-                            
-                        </div>
+                        <button class="bg-white/90 backdrop-blur text-black rounded-full px-6 py-2 hover:bg-white transition-colors font-semibold">
+                            <a href="">Men's</a>
+                        </button>
                     </div>
                 </div>
-                <div class="col-span-6 md:col-span-4 relative mx-3 h-80 md:h-150">
-                    <img src="./frontend/img/nike-just-do-it.png (6).png" alt="" class="absolute w-full  h-full">
+                <div class="col-span-6 md:col-span-4 relative h-80 md:h-150 overflow-hidden rounded-lg group">
+                    <img src="./frontend/img/nike-just-do-it.png (6).png" alt="" class="absolute w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
                     <div class="absolute bottom-5 left-5">
-                        <div>
-                            <button class="bg-white text-black rounded-xl p-2 cursor-pointer">
-                                <a href="">Woman's</a>
-                            </button>
-                            
-                        </div>
+                        <button class="bg-white/90 backdrop-blur text-black rounded-full px-6 py-2 hover:bg-white transition-colors font-semibold">
+                            <a href="">Women's</a>
+                        </button>
                     </div>
                 </div>
-                <div class="col-span-12 md:col-span-4 relative mx-3 h-80 md:h-150">
-                    <img src="./frontend/img/nike-just-do-it.png (7).png" alt="" class="absolute w-full  h-full">
+                <div class="col-span-12 md:col-span-4 relative h-80 md:h-150 overflow-hidden rounded-lg group">
+                    <img src="./frontend/img/nike-just-do-it.png (7).png" alt="" class="absolute w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
                     <div class="absolute bottom-5 left-5">
-                        <div>
-                            <button class="bg-white text-black rounded-xl p-2 cursor-pointer">
-                                <a href="">Kids'</a>
-                            </button>
-                            
-                        </div>
+                        <button class="bg-white/90 backdrop-blur text-black rounded-full px-6 py-2 hover:bg-white transition-colors font-semibold">
+                            <a href="">Kids'</a>
+                        </button>
                     </div>
                 </div>
             </div>
-            
         </div>
-        
-        <div class="my-20 md:mx-20  flex justify-center">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-20">
-            <div>
-                <span>Icononic</span>
-                <ul class="flex flex-col gap-3 ">
-                    <li><a href="">Air Force 1</a></li>
-                    <li><a href="">King crown</a></li>
-                    <li><a href="">Air Max 90</a></li>
-                    <li><a href="">Air Max 95</a></li>
-                </ul>
-            </div>
-            <div>
-                <span>Shoes</span>
-                <ul class="text-gray-500 gap-3 flex flex-col">
-                    <li><a href="">All Shoes</a></li>
-                    <li><a href="">Custom Shoes</a></li>
-                    <li><a href="">Nike Shoes</a></li>
-                    <li><a href="">PAddidas Shoes</a></li>
-                   
-                </ul>
-            </div>
-            <div>
-                <span>About US</span>
-                <ul class="text-gray-500 gap-3 flex flex-col">
-                    <li><a href="">News</a></li>
-                    <li><a href="">Careers</a></li>
-                    <li><a href="">Investors</a></li>
-                    <li><a href="">Careers</a></li>
-                    <li><a href="">Sustainability</a></li>
-                </ul>
-            </div>
-            <div>
-                <span>About US</span>
-                <ul class="text-gray-500 gap-3 flex flex-col">
-                    <li><a href="">News</a></li>
-                    <li><a href="">Careers</a></li>
-                    <li><a href="">Investors</a></li>
-                    <li><a href="">Careers</a></li>
-                    <li><a href="">Sustainability</a></li>
-                </ul>
-            </div>
-        </div> 
+        <div class="my-20 md:mx-20 flex justify-center px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-20">
+                <div>
+                    <span class="font-bold text-lg text-gray-800 mb-4 block">Iconic</span>
+                    <ul class="flex flex-col gap-2">
+                        <li><a href="" class="text-gray-600 hover:text-black transition-colors">Air Force 1</a></li>
+                        <li><a href="" class="text-gray-600 hover:text-black transition-colors">King Crown</a></li>
+                        <li><a href="" class="text-gray-600 hover:text-black transition-colors">Air Max 90</a></li>
+                        <li><a href="" class="text-gray-600 hover:text-black transition-colors">Air Max 95</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="font-bold text-lg text-gray-800 mb-4 block">Shoes</span>
+                    <ul class="flex flex-col gap-2">
+                        <li><a href="" class="text-gray-600 hover:text-black transition-colors">All Shoes</a></li>
+                        <li><a href="" class="text-gray-600 hover:text-black transition-colors">Custom Shoes</a></li>
+                        <li><a href="" class="text-gray-600 hover:text-black transition-colors">Nike Shoes</a></li>
+                        <li><a href="" class="text-gray-600 hover:text-black transition-colors">Adidas Shoes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="font-bold text-lg text-gray-800 mb-4 block">About Us</span>
+                    <ul class="flex flex-col gap-2">
+                        <li><a href="" class="text-gray-600 hover:text-black transition-colors">News</a></li>
+                        <li><a href="" class="text-gray-600 hover:text-black transition-colors">Careers</a></li>
+                        <li><a href="" class="text-gray-600 hover:text-black transition-colors">Investors</a></li>
+                        <li><a href="" class="text-gray-600 hover:text-black transition-colors">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="font-bold text-lg text-gray-800 mb-4 block">Contact</span>
+                    <ul class="flex flex-col gap-2">
+                        <li><a href="" class="text-gray-600 hover:text-black transition-colors">Support</a></li>
+                        <li><a href="" class="text-gray-600 hover:text-black transition-colors">Partners</a></li>
+                        <li><a href="" class="text-gray-600 hover:text-black transition-colors">Press</a></li>
+                        <li><a href="" class="text-gray-600 hover:text-black transition-colors">Community</a></li>
+                    </ul>
+                </div>
+            </div> 
         </div>
     </main>
-    <footer class=" bg-black text-white p-10  ">
-        <div class="grid md:mx-30   grid-cols-2 md:grid-cols-4 gap-20">
+    <footer class="bg-black text-white p-10">
+        <div class="grid md:mx-30 grid-cols-2 md:grid-cols-3 gap-10 md:gap-20">
             <div>
-                <span>Find A Store</span>
-                <ul class="flex flex-col gap-3 ">
-                    <li><a href="">Become A Member</a></li>
-                    <li><a href="">Sign Up for Email</a></li>
-                    <li><a href="">Send Us Feedback</a></li>
-                    <li><a href="">Student Discounts</a></li>
+                <span class="font-bold text-lg mb-4 block">Find A Store</span>
+                <ul class="flex flex-col gap-2">
+                    <li><a href="" class="text-gray-400 hover:text-white transition-colors">Become A Member</a></li>
+                    <li><a href="" class="text-gray-400 hover:text-white transition-colors">Sign Up for Email</a></li>
+                    <li><a href="" class="text-gray-400 hover:text-white transition-colors">Send Us Feedback</a></li>
+                    <li><a href="" class="text-gray-400 hover:text-white transition-colors">Student Discounts</a></li>
                 </ul>
             </div>
             <div>
-                <span>Get Help</span>
-                <ul class="text-gray-500 gap-3 flex flex-col">
-                    <li><a href="">Order Status</a></li>
-                    <li><a href="">Delivery</a></li>
-                    <li><a href="">Returns</a></li>
-                    <li><a href="">Payment Options</a></li>
-                    <li><a href="">Contact Us On Inquiries</a></li>
+                <span class="font-bold text-lg mb-4 block">Get Help</span>
+                <ul class="flex flex-col gap-2">
+                    <li><a href="" class="text-gray-400 hover:text-white transition-colors">Order Status</a></li>
+                    <li><a href="" class="text-gray-400 hover:text-white transition-colors">Delivery</a></li>
+                    <li><a href="" class="text-gray-400 hover:text-white transition-colors">Returns</a></li>
+                    <li><a href="" class="text-gray-400 hover:text-white transition-colors">Payment Options</a></li>
+                    <li><a href="" class="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
                 </ul>
             </div>
             <div>
-                <span>About US</span>
-                <ul class="text-gray-500 gap-3 flex flex-col">
-                    <li><a href="">News</a></li>
-                    <li><a href="">Careers</a></li>
-                    <li><a href="">Investors</a></li>
-                    <li><a href="">Careers</a></li>
-                    <li><a href="">Sustainability</a></li>
+                <span class="font-bold text-lg mb-4 block">About Us</span>
+                <ul class="flex flex-col gap-2">
+                    <li><a href="" class="text-gray-400 hover:text-white transition-colors">News</a></li>
+                    <li><a href="" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
+                    <li><a href="" class="text-gray-400 hover:text-white transition-colors">Investors</a></li>
+                    <li><a href="" class="text-gray-400 hover:text-white transition-colors">Purpose</a></li>
+                    <li><a href="" class="text-gray-400 hover:text-white transition-colors">Sustainability</a></li>
                 </ul>
             </div>
         </div>   
-        <div class="flex justify-around mt-7 gap-10">
-            <div class="flex gap-4">
-                <span>Ivoiry Coest</span>
-                <span>© 2022 Design Highly inspired by Nike.com</span>
+        <div class="flex flex-col md:flex-row justify-between items-center mt-10 pt-10 border-t border-gray-800 gap-4">
+            <div class="flex gap-4 text-sm">
+                <span class="text-gray-400">Ivory Coast</span>
+                <span class="text-gray-400">© 2022 Design Highly inspired by Nike.com</span>
             </div>
-            <div class="flex gap-4 flex-col md:flex-row">
-                <span> <a href="">Guides</a></span>
-                <span> <a href="">Terms of Sale</a></span>
-                <span> <a href="">Terms of Use</a></span>
-                <span> <a href="">Our Privacy Policy</a></span>
+            <div class="flex gap-4 flex-wrap text-sm">
+                <a href="" class="text-gray-400 hover:text-white transition-colors">Guides</a>
+                <a href="" class="text-gray-400 hover:text-white transition-colors">Terms of Sale</a>
+                <a href="" class="text-gray-400 hover:text-white transition-colors">Terms of Use</a>
+                <a href="" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
             </div>
         </div>
     </footer>
-
-
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="./frontend/js/main.js"></script>
 </body>

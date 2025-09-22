@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav id="Navbar"></nav>
+    </header>
+
+    <main class="md:mx-10 my-10">
+        <div class="flex justify-end">
+            <button
+                class="bg-black text-white rounded-full px-6 py-3 hover:bg-gray-800 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl hover:scale-105"
+                onclick="my_modal_1.showModal()">Add Articles</button>
+            <dialog id="my_modal_1" class="modal backdrop-blur-sm">
+                <div class="modal-box w-11/12 max-w-4xl bg-white shadow-2xl">
+                    <h2 class="text-3xl font-bold text-center mb-8 text-gray-900">Make Your Product</h2>
+                    <form id="FromaddProduct" class="space-y-5">
+                        <div class="form-control">
+                            <label for="imgurl"
+                                class="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-2">Image
+                                URL</label>
+                            <input type="url" id="imgurl"
+                                class="input input-bordered w-full focus:border-black focus:outline-none transition-colors"
+                                placeholder="https://example.com/image.jpg" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="title"
+                                class="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-2">Title</label>
+                            <input type="text" id="title"
+                                class="input input-bordered w-full focus:border-black focus:outline-none transition-colors"
+                                placeholder="Product title" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="description"
+                                class="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-2">Description</label>
+                            <input type="text" id="description"
+                                class="input input-bordered w-full focus:border-black focus:outline-none transition-colors"
+                                placeholder="Short description" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="details"
+                                class="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-2">Details</label>
+                            <textarea id="details"
+                                class="textarea textarea-bordered w-full h-32 focus:border-black focus:outline-none transition-colors"
+                                placeholder="Product details..." required></textarea>
+                        </div>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="form-control">
+                                <label for="quantity"
+                                    class="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-2">Quantity</label>
+                                <input type="number" id="quantity"
+                                    class="input input-bordered w-full focus:border-black focus:outline-none transition-colors"
+                                    placeholder="0" min="0" required>
+                            </div>
+                            <div class="form-control">
+                                <label for="price"
+                                    class="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-2">Price
+                                    (CFA)</label>
+                                <input type="number" id="price"
+                                    class="input input-bordered w-full focus:border-black focus:outline-none transition-colors"
+                                    placeholder="0.00" min="0" step="0.01" required>
+                            </div>
+                        </div>
+                        <button type="submit" id="button_validate"
+                            class="w-full bg-black text-white rounded-full py-3 hover:bg-gray-800 transition-all duration-300 font-semibold mt-6">Validate
+                            Product</button>
+                    </form>
+                    <div class="modal-action mt-6 justify-center">
+                        <form method="dialog">
+                            <button
+                                class="btn btn-ghost rounded-full px-8 py-2 font-semibold hover:bg-gray-100 transition-colors">Cancel</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+            <dialog id="my_modal_2" class="modal backdrop-blur-sm">
+                <div class="modal-box w-11/12 max-w-4xl bg-white shadow-2xl">
+                    <h2 class="text-3xl font-bold text-center mb-8 text-gray-900">Product Details</h2>
+                    <div class="showProduct space-y-4">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <label class="text-sm font-semibold text-gray-700 uppercase tracking-wider">Image
+                                URL</label>
+                            <span id="showimgurl" class="block text-base mt-2 text-gray-600"></span>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <label class="text-sm font-semibold text-gray-700 uppercase tracking-wider">Title</label>
+                            <span id="showtitle" class="block text-xl font-bold mt-2 text-gray-900"></span>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <label
+                                class="text-sm font-semibold text-gray-700 uppercase tracking-wider">Description</label>
+                            <span id="showdescription"
+                                class="block text-base mt-2 text-gray-600 leading-relaxed"></span>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <label class="text-sm font-semibold text-gray-700 uppercase tracking-wider">Details</label>
+                            <span id="showdetail" class="block text-base mt-2 text-gray-600 leading-relaxed"></span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-6 pt-4">
+                            <div class="text-center p-6 bg-black text-white rounded-lg">
+                                <label class="text-xs uppercase tracking-wider opacity-75">Quantity</label>
+                                <span id="showquantity" class="block text-3xl font-bold mt-2"></span>
+                            </div>
+                            <div class="text-center p-6 bg-black text-white rounded-lg">
+                                <label class="text-xs uppercase tracking-wider opacity-75">Price</label>
+                                <span id="showprice" class="block text-3xl font-bold mt-2"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-action mt-8 justify-center">
+                        <form method="dialog">
+                            <button
+                                class="bg-black text-white rounded-full px-8 py-3 hover:bg-gray-800 transition-all duration-300 font-semibold">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+        </div>
+
+        <div class="grid grid-cols-12 gap-4  " id="productsList"></div>
+    </main>
+    <div id="modalupdate">
+        <dialog id="my_modal_3" class="modal backdrop-blur-sm">
+            <div class="modal-box w-11/12 max-w-4xl bg-white shadow-2xl">
+                <h2 class="text-3xl font-bold text-center mb-8 text-gray-900">Make Your Product</h2>
+                <div id="Fromupdate" class="space-y-5">
+                    <div class="form-control">
+                        <label for="updateimgurl" class="label"><span
+                                class="text-sm font-semibold text-gray-700 uppercase tracking-wider">Image
+                                URL</span></label>
+                        <input type="url" id="updateimgurl"
+                            class="input input-bordered w-full focus:border-black focus:outline-none transition-colors"
+                            placeholder="https://example.com/image.jpg" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="updatetitle" class="label"><span
+                                class="text-sm font-semibold text-gray-700 uppercase tracking-wider">Title</span></label>
+                        <input type="text" id="updatetitle"
+                            class="input input-bordered w-full focus:border-black focus:outline-none transition-colors"
+                            placeholder="Product title" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="updatedescription" class="label"><span
+                                class="text-sm font-semibold text-gray-700 uppercase tracking-wider">Description</span></label>
+                        <input type="text" id="updatedescription"
+                            class="input input-bordered w-full focus:border-black focus:outline-none transition-colors"
+                            placeholder="Short description" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="updatedetails" class="label"><span
+                                class="text-sm font-semibold text-gray-700 uppercase tracking-wider">Details</span></label>
+                        <textarea id="updatedetails"
+                            class="textarea textarea-bordered w-full h-32 focus:border-black focus:outline-none transition-colors"
+                            placeholder="Product details..." required></textarea>
+                    </div>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="form-control">
+                            <label for="updatequantity" class="label"><span
+                                    class="text-sm font-semibold text-gray-700 uppercase tracking-wider">Quantity</span></label>
+                            <input type="number" id="updatequantity"
+                                class="input input-bordered w-full focus:border-black focus:outline-none transition-colors"
+                                placeholder="0" min="0" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="updateprice" class="label"><span
+                                    class="text-sm font-semibold text-gray-700 uppercase tracking-wider">Price
+                                    (CFA)</span></label>
+                            <input type="number" id="updateprice"
+                                class="input input-bordered w-full focus:border-black focus:outline-none transition-colors"
+                                placeholder="0.00" min="0" step="0.01" required>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 pt-4">
+                        <button type="button" id="button_validate_update"
+                            class="flex-1 bg-black text-white rounded-full py-3 hover:bg-gray-800 transition-all duration-300 font-semibold">Validate
+                            Product</button>
+                    </div>
+                </div>
+                <div class="modal-action mt-6 justify-center">
+                    <form method="dialog">
+                        <button
+                            class="btn btn-ghost rounded-full px-8 py-2 font-semibold hover:bg-gray-100 transition-colors">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+        <!-- Open the modal using ID.showModal() method -->
+
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle backdrop-blur-sm">
+            <div class="modal-box bg-white shadow-2xl border-0">
+                <div class="items-center flex justify-center flex-col py-6">
+                    <div class="relative mb-4">
+                        <div class="absolute inset-0 bg-green-100 rounded-full blur-xl animate-pulse"></div>
+                        <img src="./img/cergrgtgthgztggetrg.png" alt="success" class="h-24 relative z-10">
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-2">Products on Sale</h3>
+                    <span class="text-lg text-gray-600">Take a look in the market</span>
+                </div>
+                <div class="modal-action justify-center pb-4">
+                    <form method="dialog" class="flex gap-3">
+                        <button
+                            class="btn bg-black text-white rounded-full px-8 py-2 hover:bg-gray-800 transition-all duration-300 font-semibold border-0">Go
+                            to Market</button>
+                        <button class="btn btn-ghost rounded-full px-8 py-2 font-semibold">Close</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="/frontend/js/main.js"></script>
+</body>
+
+</html>
