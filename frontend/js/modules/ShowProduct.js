@@ -1,5 +1,5 @@
 export const ShowProduct = () => {
-    const btn = document.querySelectorAll(".btn-info")
+    const btn = document.querySelectorAll(".view-button")
     console.log(btn)
     btn.forEach(items => {
         items?.addEventListener("click",async() =>{

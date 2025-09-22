@@ -1,5 +1,5 @@
 export const UpdateItems = () => {
-    const btn = document.querySelectorAll(".btn-warning")
+    const btn = document.querySelectorAll(".update-button")
     const btnup = document.getElementById("button_validate_update") || null
     let b = ""
     btn?.forEach(items => {

@@ -22,7 +22,7 @@ export const Postprodutcs = async () => {
                     <p class="text-sm text-gray-600 mt-2">${element.description}</p>
                     <p class="text-2xl font-bold text-black mt-4">${element.price}</p>
                     <div class="card-actions justify-end gap-3 mt-6">
-                        <div data-id="${element.id}" class="px-6 py-2 border border-gray-300 rounded-full text-sm font-semibold text-gray-700 hover:bg-gray-100 cursor-pointer transition-colors" onclick="my_modal_2.showModal()">View Details</div>
+                        <div data-id="${element.id}" class="px-6 py-2 border border-gray-300 rounded-full view-button text-sm font-semibold text-gray-700 hover:bg-gray-100 cursor-pointer transition-colors" onclick="my_modal_2.showModal()">View Details</div>
                         <div data-id="${element.id}" class="px-6 py-2 bg-black text-white rounded-full text-sm font-semibold hover:bg-gray-800 cursor-pointer transition-colors">Buy Now</div>
                     </div>
                 </div>

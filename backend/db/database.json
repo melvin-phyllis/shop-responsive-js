@@ -49,25 +49,25 @@
       "id": "94d5"
     },
     {
-      "id": "db69",
-      "idUser": "2935",
-      "title": "S",
-      "imgurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNu9uulWIgqP6ax8ikiM4eQUf2cNqGtOMkaQ&saa",
-      "description": "222",
-      "details": "QQQQQQQQQQQQ",
-      "quantity": "24",
-      "price": "0.18",
-      "statut": "public"
-    },
-    {
       "id": "39e5",
       "idUser": "2935",
       "title": "XXXXXXXXXXX",
       "imgurl": "http://127.0.0.1:5500/frontend/add-articles.html?",
-      "description": "XXXXXXXXXXXXXXXXX",
-      "details": "XXXXXXXXXXXX",
-      "quantity": "222222222",
-      "price": "2222222222",
+      "description": "AAAAAAAAA",
+      "details": "AAAAAAAAAAAAA",
+      "quantity": "3",
+      "price": "0.03",
+      "statut": "public"
+    },
+    {
+      "id": "be02",
+      "idUser": "2935",
+      "title": "ZZ",
+      "imgurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzghu6wfKDwrn8aqHKw2e1Ql9RTA7CU7haNA&s",
+      "description": "ZZ",
+      "details": "ABSZ",
+      "quantity": "13",
+      "price": "0.53",
       "statut": "public"
     }
   ]

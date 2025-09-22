@@ -1,7 +1,7 @@
 
 export const RemoveItem =  ()=>{
     try {
-        const btn = document.querySelectorAll(".btn-error")
+        const btn = document.querySelectorAll(".delete-button")
     
     btn?.forEach(item => {
         item.addEventListener("click",async ()=>{
