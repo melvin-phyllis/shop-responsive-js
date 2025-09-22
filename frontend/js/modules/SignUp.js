@@ -15,6 +15,7 @@ export const SignUp = () => {
       //verifie si les deux mots de passe sont egaux
       if(password !== passwordConfirm) return ErrorMessage("Les deux mots de passe doivent être identiques")
 
+      /* const req = await axios.post("http://localhost:3001/users", { email, nameUser, password }) */
       const req = await axios.post("http://localhost:3001/users", { email, nameUser, password })
       ErrorMessage("Bienvenue")
       time
