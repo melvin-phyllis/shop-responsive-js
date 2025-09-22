@@ -105,14 +105,6 @@ Les données sont stockées dans `backend/db/database.json`.
 - Axios est chargé via CDN sur chaque page qui consomme l’API.
 - Les URL d’API sont codées en dur (`http://localhost:3001`); pour un projet plus grand, centraliser cette constante est recommandé.
 
-## Problèmes connus / Améliorations
-- Correction orthographe fichiers: `sigin.html` → `signup.html`, `dashbord.html` → `dashboard.html`.
-- Harmoniser le statut produit (utiliser `"public"`/`"private"` de façon cohérente).
-- Nettoyer quelques typos et liens (ex: lien de la Navbar vers la bonne home).
-- Sécuriser le ciblage DOM (retour anticipé si un sélecteur n’existe pas sur une page).
-- UX: ajouter des retours visuels après ajout/édition/suppression et rafraîchir la liste.
-- Démo uniquement: mots de passe en clair, aucune validation côté serveur (ne pas utiliser en production).
-
 ## Ce que j’ai appris
 - Structurer un projet front en modules ES (`import`/`export`) et point d’entrée unique
 - Intégrer Axios via CDN et gérer le cycle des requêtes (succès/erreur)
@@ -123,22 +115,8 @@ Les données sont stockées dans `backend/db/database.json`.
 - Petites bonnes pratiques: early returns si éléments absents, factoriser les sélecteurs, vider les conteneurs avant rerendu
 - Déboguer avec la console navigateur, comprendre les erreurs 404/CORS et chemins relatifs/absolus
 
-## Roadmap (courte)
-- Renommer `sigin.html` → `signup.html` et `dashbord.html` → `dashboard.html` (et corriger les liens)
-- Centraliser `API_BASE_URL` et éviter les répétitions d’URL
-- Ajouter du feedback utilisateur après ajout/édition/suppression et rafraîchir les listes
-- Pré-remplir le modal d’édition avec les données actuelles avant PATCH
-- Améliorer l’aperçu d’image dans les modals (utiliser `<img>` au lieu d’un texte)
-- Nettoyer les consoles, harmoniser les statuts (`public`/`private`) et le CSS (chemins relatifs)
-- Si poursuite: auth plus solide (hash des mots de passe), validations, éventuellement tests e2e
-
-## Dépannage
-- 404 ou CORS sur l’API: vérifier que `json-server` tourne sur le port 3001.
-- Les images d’arrière-plan ne s’affichent pas: éviter les chemins absolus (`/frontend/...`) lorsqu’hébergé sous un sous-chemin; préférer des chemins relatifs.
-- Rien ne se passe au clic: ouvrir la console du navigateur (F12) pour voir les erreurs JS.
-
 ## Crédits
-- [json-server](https://github.com/typicode/json-server)
+- [melvin-phyllis](https://github.com/melvin-phyllis)
 - [Tailwind CSS](https://tailwindcss.com/) & [DaisyUI](https://daisyui.com/)
 
 ---
